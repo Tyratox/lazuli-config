@@ -2,7 +2,7 @@
 	"name": "lazuli-config",
 	"version": "1.0.0",
 	"description": "A lazuli module managing all configuration options",
-	"main": "src/lazuli-config.mjs",
+	"main": "src/lazuli-config.js",
 	"scripts": {
 		"docs": "jsdoc src -r -c jsdoc.json -R README.md -d docs",
 		"test": "ava"
