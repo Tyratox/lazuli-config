@@ -1,0 +1,44 @@
+{
+	"name": "lazuli-config",
+	"version": "1.0.0",
+	"description": "A lazuli module managing all configuration options",
+	"main": "src/lazuli-config.mjs",
+	"scripts": {
+		"docs": "jsdoc src -r -c jsdoc.json -R README.md -d docs",
+		"test": "ava"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tyratox/lazuli-config.git"
+	},
+	"keywords": ["lazuli", "authentication"],
+	"author": "Nico Hauser",
+	"contributors": [
+		{
+			"name": "Nico Hauser",
+			"email": "me@tyratox.ch",
+			"url": "https://tyratox.ch"
+		}
+	],
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/tyratox/lazuli-config/issues"
+	},
+	"homepage": "https://lazuli.tyratox.ch",
+	"dependencies": {},
+	"peerDependencies": {
+		"lazuli-logger": "tyratox/lazuli-logger"
+	},
+	"devDependencies": {
+		"ava": "^0.22.0",
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.0",
+		"babel-register": "^6.26.0",
+		"jsdoc": "^3.5.4",
+		"lazuli-logger": "tyratox/lazuli-logger"
+	},
+	"ava": {
+		"require": ["babel-register"],
+		"babel": "inherit"
+	}
+}
