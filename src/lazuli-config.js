@@ -47,7 +47,7 @@ const scanDirectorySync = (config, folder) => {
 				existsSync(path.join(folder, module, "config-sample.json")) &&
 				statSync(path.join(folder, module, "config-sample.json")).isFile()
 			) {
-				console.log("info", "Found config-sample.json for ", module);
+				console.log("info", "Found config-sample.json for", module);
 				return require(path.join(folder, module, "config-sample.json"));
 			} else {
 				return null;
@@ -85,7 +85,7 @@ const scanDirectorySync = (config, folder) => {
 			continue;
 		}
 
-		if (!key in config) {
+		if (!config.hasOwnProperty(key)) {
 			console.log(
 				"info",
 				"Option key " +
