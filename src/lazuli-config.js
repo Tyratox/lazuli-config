@@ -18,11 +18,12 @@ console.log("info", "Found root directory: ", root);
  * @return {Promise}       A promise to check for the success
  */
 const scanDirectorySync = (config, folder) => {
-	if (!existsSync(path.join(folder, "node_modules"))) {
+	folder = path.join(folder, "node_modules");
+	if (!existsSync(folder)) {
 		return;
 	}
 
-	console.log("info", "scanning", path.join(folder, "node_modules"), "...");
+	console.log("info", "scanning", folder, "...");
 
 	const files = readdirSync(path.join(folder, "node_modules"));
 	let defaultOptions = {};
