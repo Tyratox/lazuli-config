@@ -112,6 +112,8 @@ if (existsSync(path.join(root, "config.json"))) {
 	config = {};
 }
 
+Object.assign(config, { APP_ROOT: root });
+
 scanDirectorySync(config, root);
 scanDirectorySync(config, path.resolve(__dirname, ".."));
 
