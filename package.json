@@ -11,7 +11,10 @@
 		"type": "git",
 		"url": "https://github.com/tyratox/lazuli-config.git"
 	},
-	"keywords": ["lazuli", "authentication"],
+	"keywords": [
+		"lazuli",
+		"config"
+	],
 	"author": "Nico Hauser",
 	"contributors": [
 		{
@@ -25,20 +28,21 @@
 		"url": "https://github.com/tyratox/lazuli-config/issues"
 	},
 	"homepage": "https://lazuli.tyratox.ch",
-	"dependencies": {},
-	"peerDependencies": {
-		"lazuli-logger": "tyratox/lazuli-logger"
+	"dependencies": {
+		"lazuli-require": "tyratox/lazuli-require"
 	},
+	"peerDependencies": {},
 	"devDependencies": {
 		"ava": "^0.22.0",
 		"babel-core": "^6.26.0",
 		"babel-preset-env": "^1.6.0",
 		"babel-register": "^6.26.0",
-		"jsdoc": "^3.5.4",
-		"lazuli-logger": "tyratox/lazuli-logger"
+		"jsdoc": "^3.5.4"
 	},
 	"ava": {
-		"require": ["babel-register"],
+		"require": [
+			"babel-register"
+		],
 		"babel": "inherit"
 	}
 }
