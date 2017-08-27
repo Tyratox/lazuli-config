@@ -25,7 +25,7 @@ const scanDirectorySync = (config, folder) => {
 
 	console.log("info", "scanning", folder, "...");
 
-	const files = readdirSync(path.join(folder, "node_modules"));
+	const files = readdirSync(folder);
 	let defaultOptions = {};
 
 	files
