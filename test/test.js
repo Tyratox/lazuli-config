@@ -7,7 +7,7 @@ const unlink = util.promisify(fs.unlink);
 
 const config = require("../src/lazuli-config.js");
 
-test(t => {
+test("load empty config", t => {
 	t.deepEqual(config, {});
 });
 
