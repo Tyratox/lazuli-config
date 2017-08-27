@@ -1,4 +1,4 @@
-import logger from "lazuli-logger";
+const logger = require("lazuli-logger");
 
 const util = require("util");
 const fs = require("fs");
