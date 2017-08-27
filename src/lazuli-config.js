@@ -43,11 +43,11 @@ const scanDirectorySync = (config, folder) => {
 		})
 		.map(module => {
 			if (
-				existsSync(path.join(folder, file, "config-sample.json")) &&
-				statSync(path.join(folder, file, "config-sample.json")).isFile()
+				existsSync(path.join(folder, module, "config-sample.json")) &&
+				statSync(path.join(folder, module, "config-sample.json")).isFile()
 			) {
-				console.log("info", "Found config-sample.json for ", file);
-				return require(path.join(folder, file, "config-sample.json"));
+				console.log("info", "Found config-sample.json for ", module);
+				return require(path.join(folder, module, "config-sample.json"));
 			} else {
 				return null;
 			}
