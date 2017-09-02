@@ -118,7 +118,11 @@ Object.assign(config, { APP_ROOT: root });
 scanDirectorySync(config, root);
 scanDirectorySync(config, path.resolve(__dirname, ".."));
 
-writeFileSync(path.join(root, "config.json"), JSON.stringify(config), "utf8");
+writeFileSync(
+	path.join(root, "config.json"),
+	JSON.stringify(config, null, 4),
+	"utf8"
+);
 
 console.log(
 	"info",
