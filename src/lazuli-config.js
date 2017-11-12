@@ -7,7 +7,7 @@ const writeFileSync = fs.writeFileSync;
 const existsSync = fs.existsSync;
 
 //First of all we have to find the applications root directory
-let root = __dirname.split("node_modules")[0];
+let root = global.APP_ROOT;
 console.log("info", "Found root directory: ", root);
 
 /**
