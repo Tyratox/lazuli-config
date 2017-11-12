@@ -29,7 +29,6 @@
 	},
 	"homepage": "https://lazuli.tyratox.ch",
 	"dependencies": {
-		"lazuli-require": "tyratox/lazuli-require"
 	},
 	"peerDependencies": {},
 	"devDependencies": {
